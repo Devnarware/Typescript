@@ -27,4 +27,19 @@ const userId: ID = 1234
 const userId2: ID = "asdf" 
 // we can assign both string and number to the variable of type ID
 
+type User = {
+    name: String,
+    readonly id: ID // we can use a type in antoher type as well
+}
+
+const user: User = {
+    name: "Dev",
+    id: "asd123"
+}
+console.log(user.name, " ", user.id);
+
+user.name = "Devendra" // we can change the name of the user
+// user.id = "newId" ->  we cant change the id of the user because it is readonly
+
+console.log(user.name, " ", user.id);
 
