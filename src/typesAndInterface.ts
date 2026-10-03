@@ -67,3 +67,24 @@ const student1: Student = {
 }
 
 console.log(student1.name, " ", student1.age);
+
+
+
+// --------------- use of interfcae and type in class -----------------
+
+
+class Employee implements Person, User {
+    name: string;
+    age: number;
+    id: ID;
+    constructor(name: string, age: number, id: ID){
+        this.name = name;
+        this.age = age;
+        this.id = id;
+    }
+}
+
+const emp = new Employee("Devendra", 22, "emp123");
+// here we created a class which is implememting a interface and a type, implementing means we have to at leastr have to define that much properties which are defined in the interface and type
+
+// but in classes we can't use the type which is a uninon type, we can only use the type which is a object type.
