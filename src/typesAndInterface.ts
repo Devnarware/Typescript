@@ -1,4 +1,4 @@
-
+// --------------  TYPES -----------------
 type Book = {
     title: string,
     author: string
@@ -30,6 +30,7 @@ const userId2: ID = "asdf"
 type User = {
     name: String,
     readonly id: ID // we can use a type in antoher type as well
+    // it is readonly means we cannt change the value once it is assigned, we can only read it
 }
 
 const user: User = {
@@ -43,3 +44,26 @@ user.name = "Devendra" // we can change the name of the user
 
 console.log(user.name, " ", user.id);
 
+
+
+
+//---------------------- INTERFACES --------------------
+
+interface Person {
+    name: string,
+    age: number
+}
+// interface -> it is similar to type but it is used to define the structure of an object, not to create a custom type or data type.
+
+interface Student extends Person {
+    rollNo: number
+}
+// we can extend an interface to create a new interface with additional properties
+
+const student1: Student = {
+    name: "Devendra",
+    age:22,
+    rollNo: 123
+}
+
+console.log(student1.name, " ", student1.age);
