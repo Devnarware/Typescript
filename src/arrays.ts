@@ -22,8 +22,6 @@ const users: user[] = [
     {name: "Debu", age: 24}
 ]
 
-console.log(users);
-
 
 // 2d arrays
 
@@ -33,6 +31,14 @@ const table: number[][] = [
     [7,8,9] 
 ]
 
+// array with union type
+
+const array: (string | number)[] = []
+
+array[0] = "Devendra";
+array[1] = 22;
+
+console.log(array);
 
 
 
