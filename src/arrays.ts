@@ -38,7 +38,21 @@ const array: (string | number)[] = []
 array[0] = "Devendra";
 array[1] = 22;
 
-console.log(array);
+type id = {
+    name: string,
+    userId: number
+}
 
+const userId: id = {
+    name: "dev",
+    userId: 1234
+}
 
+const tp: any [] = []
 
+tp[0] = "cwgame"
+tp[1] = 2026
+tp[2] = false
+tp[4] = userId // we are not assiging the value of 3rd item of the array
+
+console.log(tp);
