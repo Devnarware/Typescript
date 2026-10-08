@@ -55,4 +55,13 @@ tp[1] = 2026
 tp[2] = false
 tp[4] = userId // we are not assiging the value of 3rd item of the array
 
-console.log(tp);
+// console.log(tp);
+
+
+// tuple -> it is a special type of array which can have different types of values in it, but the order of the value will be fixed for all the elements of the array.
+
+const tuple: [string, number, boolean] = ["Devendra", 22, true]
+
+tuple[1] = 23 // we can change the value of the tuple but we have to make sure that the type of the value is same as the type of the tuple
+
+console.log(tuple);
